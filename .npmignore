@@ -1,0 +1,17 @@
+# Exclude source code and config
+src/
+*.ts
+*.tsx
+tsconfig.json
+tsconfig.build.json
+.vscode/
+node_modules/
+coverage/
+.gitignore
+README.draft.md
+*.test.ts
+*.test.tsx
+jest.config.js
+
+# Build outputs only from dist/
+!dist/
