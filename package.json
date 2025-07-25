@@ -1,6 +1,6 @@
 {
   "name": "reactflow-canvas-store",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Global and per-canvas state store for React Flow projects",
   "main": "dist/index.js",
   "module": "dist/index.js",
