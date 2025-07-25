@@ -95,6 +95,19 @@ setCanvasStore('canvas1', 'edges', []);
 console.log(getCanvasStore('canvas1', 'edges'));
 ```
 
+## 📚 API 
+| Function              | Description                              |
+| --------------------- | ---------------------------------------- |
+| `useGlobalStore()`    | Reactive global state hook               |
+| `getGlobalStore()`    | Non-reactive global getter               |
+| `setGlobalStore()`    | Global setter                            |
+| `useCanvasStore(id)`  | Reactive canvas-specific hook            |
+| `getCanvasStore(id)`  | Non-reactive canvas-specific getter      |
+| `setCanvasStore(id)`  | Canvas-specific setter                   |
+| `GlobalStoreProvider` | Wraps app for global context             |
+| `CanvasStoreProvider` | Wraps a canvas and provides scoped store |
+
+
 ## 📂 Folder Structure
 ```css
 src/
