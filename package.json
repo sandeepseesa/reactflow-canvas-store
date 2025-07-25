@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Global and per-canvas state store for React Flow projects",
   "main": "dist/index.js",
-"module": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
@@ -30,12 +30,11 @@
     "react-dom": "^19.1.0"
   },
   "repository": {
-  "type": "git",
-  "url": "https://github.com/sandeepseesa/reactflow-canvas-store.git"
-},
-"bugs": {
-  "url": "https://github.com/sandeepseesa/reactflow-canvas-store/issues"
-},
-"homepage": "https://github.com/sandeepseesa/reactflow-canvas-store#readme"
-
+    "type": "git",
+    "url": "git+https://github.com/sandeepseesa/reactflow-canvas-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sandeepseesa/reactflow-canvas-store/issues"
+  },
+  "homepage": "https://github.com/sandeepseesa/reactflow-canvas-store#readme"
 }
