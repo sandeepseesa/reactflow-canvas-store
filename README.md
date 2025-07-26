@@ -1,6 +1,6 @@
 # reactflow-canvas-store
 
-Global and per-canvas state management solution for [React Flow](https://reactflow.dev/) projects using TypeScript and React Context.
+Global and multi-canvas state management solution for [React Flow](https://reactflow.dev/) projects.
 
 ---
 

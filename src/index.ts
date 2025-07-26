@@ -4,5 +4,5 @@ export { useGlobalStore } from "./global/useGlobalStore";
 export { CanvasStoreProvider } from "./canvas/CanvasStoreProvider";
 export { useCanvasStore } from "./canvas/useCanvasStore";
 
-export { getGlobalStore, setGlobalStore } from "./global/globalStore";
+export { getGlobalState, setGlobalState } from "./global/globalStore";
 export { getCanvasStore, setCanvasStore } from "./canvas/canvasStore";

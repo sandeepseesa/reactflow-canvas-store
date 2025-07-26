@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { GlobalStoreContext } from './GlobalStoreProvider';
 
+//reactive store
 export function useGlobalStore<T>(key: string): [T | undefined, (value: T) => void] {
   const context = useContext(GlobalStoreContext);
 

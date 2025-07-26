@@ -1,10 +1,8 @@
 import React, { createContext, useState, ReactNode } from 'react';
 
 type CanvasStoreContextType = {
-  [canvasId: string]: {
-    [key: string]: any;
-    setValue: (key: string, value: any) => void;
-  };
+  store: Record<string, Record<string, any>>;
+  setCanvasValue: (canvasId: string, key: string, value: any) => void;
 };
 
 export const CanvasStoreContext = createContext<CanvasStoreContextType | null>(null);
@@ -12,7 +10,7 @@ export const CanvasStoreContext = createContext<CanvasStoreContextType | null>(n
 export const CanvasStoreProvider = ({ children }: { children: ReactNode }) => {
   const [store, setStore] = useState<Record<string, Record<string, any>>>({});
 
-  const setValue = (canvasId: string, key: string, value: any) => {
+  const setCanvasValue = (canvasId: string, key: string, value: any) => {
     setStore(prev => ({
       ...prev,
       [canvasId]: {
@@ -22,17 +20,8 @@ export const CanvasStoreProvider = ({ children }: { children: ReactNode }) => {
     }));
   };
 
-  const contextValue: CanvasStoreContextType = {};
-
-  Object.keys(store).forEach(canvasId => {
-    contextValue[canvasId] = {
-      ...store[canvasId],
-      setValue: (key: string, value: any) => setValue(canvasId, key, value),
-    };
-  });
-
   return (
-    <CanvasStoreContext.Provider value={contextValue}>
+    <CanvasStoreContext.Provider value={{store, setCanvasValue}}>
       {children}
     </CanvasStoreContext.Provider>
   );
